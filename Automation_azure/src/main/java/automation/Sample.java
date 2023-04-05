@@ -13,5 +13,10 @@ public class Sample {
 	public void Test2() {
 		System.out.println("Test 2 is Executed..");
 	}
+	
+	@Test
+	public void Test3() {
+		System.out.println("Test 2 is Executed..");
+	}
  
 }
