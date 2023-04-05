@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Sample {
 
-	@Test
+	@Test 
 	public void Test1() {
 		System.out.println("Test 1 is Executed..");
 	}
@@ -13,5 +13,5 @@ public class Sample {
 	public void Test2() {
 		System.out.println("Test 2 is Executed..");
 	}
-
+ 
 }
