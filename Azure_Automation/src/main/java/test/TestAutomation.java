@@ -51,6 +51,8 @@ public class TestAutomation {
 		}
 		if (driver.getTitle().equals("Google")) {
 			System.out.println("PASS");
+			System.out.println(System.getProperty("user.dir"));
+
 			takeSnapShot(driver, System.getProperty("user.dir") + "\\target\\H1.png");
 			assertTrue(true);
 		} else {
