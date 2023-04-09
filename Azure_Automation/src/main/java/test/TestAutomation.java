@@ -53,7 +53,8 @@ public class TestAutomation {
 			System.out.println("PASS");
 			System.out.println(System.getProperty("user.dir"));
 
-			takeSnapShot(driver, System.getProperty("user.dir") + "\\test-output\\H1.png");
+			//takeSnapShot(driver, System.getProperty("user.dir") + "\\test-output\\H1.png");
+			takeSnapShot(driver, "C:\\Users\\balam\\git\\Azure_Automation\\Azure_Automation\\H1.png");
 			assertTrue(true);
 		} else {
 			System.out.println("FAIL");

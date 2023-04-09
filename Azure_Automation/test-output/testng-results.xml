@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-09T08:34:57Z" name="Default suite" finished-at="2023-04-09T08:35:10Z" duration-ms="12852">
+  <suite started-at="2023-04-09T11:41:05Z" name="Default suite" finished-at="2023-04-09T11:41:47Z" duration-ms="41507">
     <groups>
     </groups>
-    <test started-at="2023-04-09T08:34:57Z" name="Default test" finished-at="2023-04-09T08:35:10Z" duration-ms="12852">
+    <test started-at="2023-04-09T11:41:05Z" name="Default test" finished-at="2023-04-09T11:41:47Z" duration-ms="41507">
       <class name="test.TestAutomation">
-        <test-method signature="Test1()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T08:34:57Z" name="Test1" finished-at="2023-04-09T08:34:57Z" duration-ms="8" status="PASS">
+        <test-method signature="Test1()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T11:41:05Z" name="Test1" finished-at="2023-04-09T11:41:05Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method signature="Test2()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T08:34:57Z" name="Test2" finished-at="2023-04-09T08:34:57Z" duration-ms="1" status="PASS">
+        <test-method signature="Test2()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T11:41:05Z" name="Test2" finished-at="2023-04-09T11:41:05Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test2 -->
-        <test-method signature="Test3()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T08:34:57Z" name="Test3" finished-at="2023-04-09T08:34:57Z" duration-ms="1" status="PASS">
+        <test-method signature="Test3()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T11:41:05Z" name="Test3" finished-at="2023-04-09T11:41:05Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test3 -->
-        <test-method signature="Test4()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T08:34:57Z" name="Test4" finished-at="2023-04-09T08:35:10Z" duration-ms="12819" status="PASS">
+        <test-method signature="Test4()[pri:0, instance:test.TestAutomation@b4711e2]" started-at="2023-04-09T11:41:05Z" name="Test4" finished-at="2023-04-09T11:41:47Z" duration-ms="41470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test4 -->
