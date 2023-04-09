@@ -2,10 +2,16 @@ package test;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -30,7 +36,10 @@ public class TestAutomation {
 	@Test
 	public void Test4() {
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		ChromeDriver driver = new ChromeDriver(options);
+		// WebDriver driver = new ChromeDriver(options);
 
 		driver.get("https://www.google.com/");
 
@@ -42,10 +51,27 @@ public class TestAutomation {
 		}
 		if (driver.getTitle().equals("Google")) {
 			System.out.println("PASS");
+			takeSnapShot(driver, System.getProperty("user.dir") + "\\target\\H1.png");
 			assertTrue(true);
 		} else {
 			System.out.println("FAIL");
 			assertTrue(false);
+		}
+	}
+
+	public void takeSnapShot(WebDriver webdriver, String fileWithPath) {
+		// Convert web driver object to TakeScreenshot
+		TakesScreenshot scrShot = ((TakesScreenshot) webdriver);
+		// Call getScreenshotAs method to create image file
+		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
+		// Move image file to new destination
+		File DestFile = new File(fileWithPath);
+		// Copy file at destination
+		try {
+			FileUtils.copyFile(SrcFile, DestFile);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
